@@ -17,7 +17,7 @@ export default function Skills(){
 					Português (nativo) e inglês (fluente).
 				</li>
 				<li><strong>Ferramentas: </strong>
-					Git com Github e Gitlab, Firebase e Netlify.
+					Git com Github e Gitlab, Scrum, Firebase e Netlify.
 				</li>
 			</ul>
 		</Section>

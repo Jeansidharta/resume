@@ -5,6 +5,14 @@ export default function Experiences(){
 	return (
 		<Section name="Experiências" className="experiences">
 			<div>
+				<strong>Estágio na Liven de deselvolvimento web</strong>
+				<aside>12/11/2019 - hoje</aside>
+				<span className='italic'>Liven</span> é uma startup com o modelo de venture builder em São Carlos.
+				Nesta empresa, trabalhei principalmente como deselvolvedor front-end, encarregado de
+				construir uma aplicação para uma empresa chamada <span className='italic'>Impulsa</span> utilizando
+				react e redux
+			</div>
+			<div>
 				<strong>Ministrei um minicurso de React na Semcomp</strong>
 				<aside>01/10/2019</aside>
 				Semcomp é um evento da USP que promove o conhecimento nas diversas áreas da tecnologia.
@@ -27,13 +35,13 @@ export default function Experiences(){
 				produtores. O evento tinha aproximadamente 10 times, cada um com 5 - 7 membros, com
 				duração de 3 dias, no qual minha equipe alcançou a premiação.
 			</div>
-			<div>
+			{/* <div>
 				<strong>Participei do Interhack (Hackaton)</strong>
 				<aside>25/08/2019</aside>
 				Interhack é um evento anual entre universitários da USP. Nosso projeto foi uma aplicação
 				web para ajudar empresas a contactar estudantes USP para estágio. No total havia 12 times,
 				com 3 - 4 pessoas cada, com duração de dois dias.
-			</div>
+			</div> */}
 			<style>{`
 				.experiences > div{
 					margin-bottom: 1.5rem;
