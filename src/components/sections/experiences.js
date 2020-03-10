@@ -14,15 +14,15 @@ const experiences = [
 	<Experience
 		title={{
 			'pt-br': <>Estágio na AJ.Estratégia de deselvolvimento web</>,
-			'en-us': <></>,
+			'en-us': <>Web development internship at AJ.Estratégia</>,
 		}}
 		duration={{
 			'pt-br': <>04/02/2020 - hoje</>,
-			'en-us': <>04/02/2020 - today</>,
+			'en-us': <>02/04/2020 - today</>,
 		}}
 		description={{
 			'pt-br': <>
-				<span className='italic'>Liven</span> é uma startup com o modelo de venture builder em São Carlos.
+				<span className='italic'>AJ.Estratégia</span> é uma startup com o modelo de venture builder em São Carlos.
 				Nesta empresa, trabalhei principalmente como deselvolvedor front-end, encarregado de
 				construir uma aplicação para uma empresa chamada <span className='italic'>Impulsa</span> utilizando
 				react e redux
@@ -99,30 +99,30 @@ const experiences = [
 			</>,
 		}}
 	/>,
-	<Experience
-		title={{
-			'pt-br': <>Participei do Agrohack (Hackaton)</>,
-			'en-us': <>Attended Agrohack (Hackaton)</>,
-		}}
-		duration={{
-			'pt-br': <>02/07/2019</>,
-			'en-us': <>07/02/2019</>,
-		}}
-		description={{
-			'pt-br': <>
-				Agrohack é um hackaton focado em agronomia realizado na ESALQ. Liderei uma equipe
-				que desenvolveu um aplicativo para conectar mercados e restaurantes aos mais próximos
-				produtores. O evento tinha aproximadamente 10 times, cada um com 5 - 7 membros, com
-				duração de 3 dias, no qual minha equipe alcançou a premiação.
-			</>,
-			'en-us': <>
-				Agrohack is an agronomy focused hackaton held at ESALQ. My team developed an app
-				to help local restaurants and stores to find the closest producer to them.
-				The event had about 10 teams, 5 - 7 members each, and lasted for 3 days.
-				My team was awarded.
-			</>,
-		}}
-	/>,
+	// <Experience
+	// 	title={{
+	// 		'pt-br': <>Participei do Agrohack (Hackaton)</>,
+	// 		'en-us': <>Attended Agrohack (Hackaton)</>,
+	// 	}}
+	// 	duration={{
+	// 		'pt-br': <>02/07/2019</>,
+	// 		'en-us': <>07/02/2019</>,
+	// 	}}
+	// 	description={{
+	// 		'pt-br': <>
+	// 			Agrohack é um hackaton focado em agronomia realizado na ESALQ. Liderei uma equipe
+	// 			que desenvolveu um aplicativo para conectar mercados e restaurantes aos mais próximos
+	// 			produtores. O evento tinha aproximadamente 10 times, cada um com 5 - 7 membros, com
+	// 			duração de 3 dias, no qual minha equipe alcançou a premiação.
+	// 		</>,
+	// 		'en-us': <>
+	// 			Agrohack is an agronomy focused hackaton held at ESALQ. My team developed an app
+	// 			to help local restaurants and stores to find the closest producer to them.
+	// 			The event had about 10 teams, 5 - 7 members each, and lasted for 3 days.
+	// 			My team was awarded.
+	// 		</>,
+	// 	}}
+	// />,
 	// <Experience
 	// 	title={{
 	// 		'pt-br': <>Participei do Interhack (Hackaton)</>,
