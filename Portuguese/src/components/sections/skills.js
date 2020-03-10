@@ -1,8 +1,8 @@
 import React from "react";
 import Section from "../section";
+import locale from '../../constant/locale'
 
 function Category ({ name, description }) {
-	const locale = 'pt-br'
 	return <li>
 		<strong>{name[locale]}:</strong>
 		{' '}{description[locale]}
@@ -64,7 +64,7 @@ const categories = [
 
 export default function Skills(){
 	return (
-		<Section name="Habilidades" className="skills">
+		<Section name={{ 'pt-br': 'Habilidades', 'en-us': 'Skills'}} className="skills">
 			<ul>
 				{categories}
 			</ul>

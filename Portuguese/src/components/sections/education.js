@@ -1,8 +1,8 @@
 import React from "react";
 import Section from "../section";
+import locale from '../../constant/locale'
 
 function Info ({ title, duration }) {
-	const locale = 'pt-br'
 	return <>
 		<p style={{ margin: 0 }}><strong>{title[locale]}</strong></p>
 		<aside>{duration[locale]}</aside>
@@ -24,7 +24,7 @@ const infos = [
 
 export default function Education(){
 	return (
-		<Section name="Educação" className="education">
+		<Section name={{ 'pt-br': 'Educação', 'en-us': 'Education'}} className="education">
 			{infos}
 		</Section>
 	);
