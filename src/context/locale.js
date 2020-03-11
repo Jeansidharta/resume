@@ -2,7 +2,7 @@ import React from 'react'
 
 const defaultLocale = 'en-us'
 
-const localeContext = React.createContext(defaultLocale)
+const localeContext = React.createContext()
 
 export const possibleLocales = ['pt-br', 'en-us'];
 

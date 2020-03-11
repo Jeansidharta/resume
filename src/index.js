@@ -6,19 +6,42 @@ import Education from "./components/sections/education";
 import Skills from "./components/sections/skills";
 import Experiences from "./components/sections/experiences";
 import PersonalInfo from "./components/sections/personal-info";
-import { LocaleProvider } from "./context/locale";
+import { LocaleProvider, useLocale } from "./context/locale";
 import "./styles.css";
+
+const LocaleSelector = () => {
+	const { setLocale, locale } = useLocale();
+	const input = (event) => setLocale(event.target.value);
+	return (
+		<div id="locale-selector" style={{ margin: '1.5rem 0 0 1.5rem', fontSize: '32px' }}>
+			<label htmlFor='locale-selector'>Language:</label>
+			<select
+				id='locale-selector'
+				onInput={input}
+				defaultValue={locale}
+				style={{
+					border: '0',
+					borderTopLeftRadius: '16px',
+					borderTopRightRadius: '16px',
+					boxShadow: '-2px 3px 6px 1px rgba(0, 0, 0, 0.3)',
+					fontSize: '28px',
+					margin: '0 0 0 1rem',
+					cursor: 'pointer',
+					outline: 'none',
+					padding: '0.5rem 1rem',
+				}}
+			>
+				<option value='pt-br'>pt-br</option>
+				<option value='en-us'>en-us</option>
+			</select>
+		</div>
+	)
+}
 
 function App(){
 	return (
 		<LocaleProvider>
-			<div id="locale-selector">
-				<label>Locale:</label>
-				<select>
-					<option>pt-br</option>
-					<option>en-us</option>
-				</select>
-			</div>
+			<LocaleSelector />
 			<main>
 				<Header/>
 				<PersonalInfo/>
