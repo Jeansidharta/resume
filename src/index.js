@@ -11,8 +11,8 @@ import "./styles.css";
 function App(){
 	return (
 		<>
-			<Header/>
 			<main>
+				<Header/>
 				<PersonalInfo/>
 				<hr/>
 				<Education/>
@@ -23,7 +23,20 @@ function App(){
 			</main>
 			<style>{`
 				main{
-					margin: 0 2rem;
+					margin: 1.5rem;
+					padding: 1.5rem 2rem 0 2rem;
+					width: calc(210mm - 4rem);
+					height: calc(297mm - 1.5rem);
+					box-shadow: -3px 2px 6px 1px rgba(0, 0, 0, 0.5);
+				}
+				@media print {
+					main {
+						margin: 0;
+						padding: 1.5rem 2rem 0 2rem;
+						width: 210mm;
+						height: calc(297mm - 1.5rem);
+						box-shadow: none;
+					}
 				}
 			`}</style>
 		</>

@@ -7,10 +7,6 @@ body, html{
 	padding: 0;
 }
 
-body {
-	padding-top: 1.5rem;
-}
-
 @media print{
 	a {
 		text-decoration: none;
