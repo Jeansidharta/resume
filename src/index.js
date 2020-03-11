@@ -51,10 +51,22 @@ const LocaleSelector = () => {
 	)
 }
 
+function DocumentTitleUpdater () {
+	const { locale } = useLocale();
+	const title = {
+		'pt-br': 'Currículo-JeanSidharta',
+		'en-us': 'Resume-JeanSidharta',
+	}[locale];
+	document.title = title;
+	console.log(locale)
+	return null;
+}
+
 function App(){
 	return (
 		<LocaleProvider>
 			<LocaleSelector />
+			<DocumentTitleUpdater />
 			<main>
 				<Header/>
 				<PersonalInfo/>
