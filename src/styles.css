@@ -5,12 +5,24 @@
 body, html{
 	margin: 0;
 	padding: 0;
+	background-color: #DDDDDD;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 @media print{
 	a {
 		text-decoration: none;
 		color: black;
+	}
+	body {
+		display: unset;
+		justify-content: unset;
 	}
 }
 

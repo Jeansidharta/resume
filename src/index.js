@@ -13,7 +13,21 @@ const LocaleSelector = () => {
 	const { setLocale, locale } = useLocale();
 	const input = (event) => setLocale(event.target.value);
 	return (
-		<div id="locale-selector" style={{ margin: '1.5rem 0 0 1.5rem', fontSize: '32px' }}>
+		<div
+			id="locale-selector"
+			style={{
+				margin: '1.5rem 0 0 1.5rem',
+				fontSize: '32px',
+				width: 'calc(210mm - 2rem)',
+				backgroundColor: 'white',
+				zIndex: 1,
+				position: 'relative',
+				padding: '1rem',
+				borderTopLeftRadius: '16px',
+				borderTopRightRadius: '16px',
+				borderBottom: '1px solid black',
+			}}
+		>
 			<label htmlFor='locale-selector'>Language:</label>
 			<select
 				id='locale-selector'
@@ -21,9 +35,8 @@ const LocaleSelector = () => {
 				defaultValue={locale}
 				style={{
 					border: '0',
-					borderTopLeftRadius: '16px',
-					borderTopRightRadius: '16px',
-					boxShadow: '-2px 3px 6px 1px rgba(0, 0, 0, 0.3)',
+					borderRadius: '16px',
+					boxShadow: '-2px 3px 6px 1px rgba(0, 0, 0, 0.2)',
 					fontSize: '28px',
 					margin: '0 0 0 1rem',
 					cursor: 'pointer',
@@ -54,11 +67,12 @@ function App(){
 			</main>
 			<style>{`
 				main{
-					margin: 1.5rem;
+					margin: 0 0 1.5rem 1.5rem;
 					padding: 1.5rem 2rem 0 2rem;
 					width: calc(210mm - 4rem);
 					height: calc(297mm - 1.5rem);
-					box-shadow: -3px 2px 6px 1px rgba(0, 0, 0, 0.5);
+					box-shadow: -3px 2px 6px 3px rgba(0, 0, 0, 0.5);
+					background-color: white;
 				}
 				@media print {
 					main {
