@@ -1,11 +1,11 @@
 import React from "react";
 import Section from "../section";
-import locale from '../../constant/locale'
+import { localize } from '../../constant/locale'
 
 function Category ({ name, description }) {
 	return <li>
-		<strong>{name[locale]}:</strong>
-		{' '}{description[locale]}
+		<strong>{localize(name)}:</strong>
+		{' '}{localize(description)}
 	</li>
 }
 
