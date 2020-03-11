@@ -1,8 +1,9 @@
 import React from "react";
 import Section from "../section";
-import { localize } from '../../constant/locale'
+import { useLocale } from "../../context/locale";
 
 function Category ({ name, description }) {
+	const { localize } = useLocale()
 	return <li>
 		<strong>{localize(name)}:</strong>
 		{' '}{localize(description)}

@@ -6,11 +6,19 @@ import Education from "./components/sections/education";
 import Skills from "./components/sections/skills";
 import Experiences from "./components/sections/experiences";
 import PersonalInfo from "./components/sections/personal-info";
+import { LocaleProvider } from "./context/locale";
 import "./styles.css";
 
 function App(){
 	return (
-		<>
+		<LocaleProvider>
+			<div id="locale-selector">
+				<label>Locale:</label>
+				<select>
+					<option>pt-br</option>
+					<option>en-us</option>
+				</select>
+			</div>
 			<main>
 				<Header/>
 				<PersonalInfo/>
@@ -37,9 +45,10 @@ function App(){
 						height: calc(297mm - 1.5rem);
 						box-shadow: none;
 					}
+					#locale-selector { display: none; }
 				}
 			`}</style>
-		</>
+		</LocaleProvider>
 	);
 }
 

@@ -1,8 +1,9 @@
 import React from "react";
 import Section from "../section";
-import { localize } from '../../constant/locale'
+import { useLocale } from "../../context/locale";
 
 function Info ({ title, content }) {
+	const { localize } = useLocale()
 	return <p style={{ margin: 0, fontStyle: 'normal' }}>
 		<strong>{localize(title)}:</strong>
 		{' '}{localize(content)}

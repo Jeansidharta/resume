@@ -1,10 +1,11 @@
 import React from "react";
-import locale from '../constant/locale'
+import { useLocale } from "../context/locale";
 
 export default function Section({name = "no-name", children, className}){
+	const { localize } = useLocale()
 	return (
 		<section className="section">
-			<h2>{name[locale]}</h2>
+			<h2>{localize(name)}</h2>
 			<div className={className} style={{ paddingLeft: '2rem' }}>
 				{children}
 			</div>
