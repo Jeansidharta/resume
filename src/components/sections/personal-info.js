@@ -10,53 +10,53 @@ function Info ({ title, content }) {
 }
 
 const infos = [
-	<Info
-		title={{
+	{
+		title: {
 			'pt-br': <>Email</>,
 			'en-us': <>Email</>,
-		}}
-		content={{
+		},
+		content: {
 			'pt-br': <>jeansidharta@gmail.com</>,
 			'en-us': <>jeansidharta@gmail.com</>,
-		}}
-	/>,
-	<Info
-		title={{
+		},
+	},
+	{
+		title: {
 			'pt-br': <>Github</>,
 			'en-us': <>Github</>,
-		}}
-		content={{
+		},
+		content: {
 			'pt-br': <><a href="https://www.github.com/Jeansidharta">github.com/Jeansidharta</a></>,
 			'en-us': <><a href="https://www.github.com/Jeansidharta">github.com/Jeansidharta</a></>,
-		}}
-	/>,
-	<Info
-		title={{
+		},
+	},
+	{
+		title: {
 			'pt-br': <>Celular</>,
 			'en-us': <>Phone</>,
-		}}
-		content={{
+		},
+		content: {
 			'pt-br': <>(019) 996-200-512</>,
 			'en-us': <>+55 (019) 996-200-512</>,
-		}}
-	/>,
-	<Info
-		title={{
+		},
+	},
+	{
+		title: {
 			'pt-br': <>Endereço</>,
 			'en-us': <>Address</>,
-		}}
-		content={{
+		},
+		content: {
 			'pt-br': <>Rua Jacinto Favoreto, 301, apt 14 - São Carlos - SP - 13560-515</>,
 			'en-us': <>Rua Jacinto Favoreto, 301, apt 14 - São Carlos - SP - 13560-515</>,
-		}}
-	/>,
+		},
+	},
 ]
 
 export default function Skills(){
 	return (
 		<Section name={{ 'pt-br': 'Informações pessoais', 'en-us': 'Personal information'}} className="personal-info">
 			<address>
-				{infos}
+				{infos.map((props, index) => <Info key={index} {...props} />)}
 			</address>
 		</Section>
 	);
