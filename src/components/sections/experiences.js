@@ -11,11 +11,13 @@ function Experience ({ title, duration, description }) {
 	</div>
 }
 
+const Italic = ({ children }) => <span className='italic'>{children}</span>
+
 const experiences = [
 	{
 		title: {
-			'pt-br': <>Estágio na AJ.Estratégia de deselvolvimento web</>,
-			'en-us': <>Web development internship at AJ.Estratégia</>,
+			'pt-br': <>Estágio de deselvolvimento web na <Italic>AJ.Estratégia</Italic></>,
+			'en-us': <>Web development internship at <Italic>AJ.Estratégia</Italic></>,
 		},
 		duration: {
 			'pt-br': <>04/02/2020 - hoje</>,
@@ -23,19 +25,24 @@ const experiences = [
 		},
 		description: {
 			'pt-br': <>
-				<span className='italic'>AJ.Estratégia</span> é uma startup com o modelo de venture builder em São Carlos.
-				Nesta empresa, trabalhei principalmente como deselvolvedor front-end, encarregado de
-				construir uma aplicação para uma empresa chamada <span className='italic'>Impulsa</span> utilizando
-				react e redux
+				<Italic>AJ.Estratégia</Italic> é uma empresa de consultoria em marketing
+				digital em São Carlos. Aqui, fiquei encarregado de desenvolver aplicações
+				com foco em conversão de usuários. Minhas tarefas incluiam: otimizar o tempo
+				de carregamento de páginas; coletar dados sobre o coportamento dos usuários;
+				atualizar e modificar páginas para atrair mais clientes.
 			</>,
 			'en-us': <>
+				<Italic>AJ.Estratégia</Italic> is a digital marketing consultant company
+				in São Carlos. Here, I was in charge of developing user-conversion oriented
+				applications. My main tasks included: Optimize loading page time; collect
+				data about user behavior; modify and update pages to attract more clients.
 			</>,
 		},
 	},
 	{
 		title: {
-			'pt-br': <>Estágio na Liven de deselvolvimento web</>,
-			'en-us': <>Web development internship at Liven</>,
+			'pt-br': <>Estágio de deselvolvimento web na <Italic>Liven</Italic></>,
+			'en-us': <>Web development internship at <Italic>Liven</Italic></>,
 		},
 		duration: {
 			'pt-br': <>12/11/2019 - 14/02/2020 (3 mêses)</>,
@@ -43,14 +50,15 @@ const experiences = [
 		},
 		description: {
 			'pt-br': <>
-				<span className='italic'>Liven</span> é uma startup com o modelo de venture builder em São Carlos.
+				<Italic>Liven</Italic> é uma startup com o modelo de venture builder em São Carlos.
 				Nesta empresa, trabalhei principalmente como deselvolvedor front-end, encarregado de
-				construir uma aplicação para uma empresa chamada <span className='italic'>Impulsa</span> utilizando
-				react e redux
+				construir uma aplicação PWA utilizando React e Redux, junto de um time composto por
+				mais um desenvolvedor back-end e um scrum master.
 			</>,
 			'en-us': <>
-				Liven is a venture builder startup in São Carlos. There, I mainly worked as a front-end developer
-				in charge of building a PWA application using react for a company named Impulsa.
+				<Italic>Liven</Italic> is a venture builder startup in São Carlos. There, I mainly
+				worked as a front-end developer in charge of building a PWA application using react
+				and Redux, alongside a back-end developer and a scrum master.
 			</>,
 		},
 	},
@@ -100,30 +108,30 @@ const experiences = [
 			</>,
 		},
 	},
-	// {
-	// 	title: {
-	// 		'pt-br': <>Participei do Agrohack (Hackaton)</>,
-	// 		'en-us': <>Attended Agrohack (Hackaton)</>,
-	// 	},
-	// 	duration: {
-	// 		'pt-br': <>02/07/2019</>,
-	// 		'en-us': <>07/02/2019</>,
-	// 	},
-	// 	description: {
-	// 		'pt-br': <>
-	// 			Agrohack é um hackaton focado em agronomia realizado na ESALQ. Liderei uma equipe
-	// 			que desenvolveu um aplicativo para conectar mercados e restaurantes aos mais próximos
-	// 			produtores. O evento tinha aproximadamente 10 times, cada um com 5 - 7 membros, com
-	// 			duração de 3 dias, no qual minha equipe alcançou a premiação.
-	// 		</>,
-	// 		'en-us': <>
-	// 			Agrohack is an agronomy focused hackaton held at ESALQ. My team developed an app
-	// 			to help local restaurants and stores to find the closest producer to them.
-	// 			The event had about 10 teams, 5 - 7 members each, and lasted for 3 days.
-	// 			My team was awarded.
-	// 		</>,
-	// 	},
-	// },
+	{
+		title: {
+			'pt-br': <>Participei do Agrohack (Hackaton)</>,
+			'en-us': <>Attended Agrohack (Hackaton)</>,
+		},
+		duration: {
+			'pt-br': <>02/07/2019</>,
+			'en-us': <>07/02/2019</>,
+		},
+		description: {
+			'pt-br': <>
+				Agrohack é um hackaton focado em agronomia realizado na ESALQ. Liderei uma equipe
+				que desenvolveu um aplicativo para conectar mercados e restaurantes aos mais próximos
+				produtores. O evento tinha aproximadamente 10 times, cada um com 5 - 7 membros, com
+				duração de 3 dias, no qual minha equipe alcançou a premiação.
+			</>,
+			'en-us': <>
+				Agrohack is an agronomy focused hackaton held at ESALQ. My team developed an app
+				to help local restaurants and stores to find the closest producer to them.
+				The event had about 10 teams, 5 - 7 members each, and lasted for 3 days.
+				My team was awarded.
+			</>,
+		},
+	},
 	// {
 	// 	title: {
 	// 		'pt-br': <>Participei do Interhack (Hackaton)</>,

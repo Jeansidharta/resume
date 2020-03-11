@@ -15,6 +15,11 @@ body {
 	justify-content: center;
 }
 
+@page {
+	margin: 0;
+	background-color: white;
+}
+
 @media print{
 	a {
 		text-decoration: none;
