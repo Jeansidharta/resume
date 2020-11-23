@@ -18,7 +18,7 @@ const LocaleSelector = () => {
 			style={{
 				margin: '1.5rem 0 0 1.5rem',
 				fontSize: '32px',
-				width: 'calc(210mm - 2rem)',
+				width: '210mm',
 				backgroundColor: 'white',
 				zIndex: 1,
 				position: 'relative',
@@ -79,10 +79,10 @@ function App(){
 			</main>
 			<style>{`
 				main{
-					margin: 0 0 1.5rem 1.5rem;
+					margin: 0 1.5rem 1.5rem 1.5rem;
 					padding: 1.5rem 2rem 0 2rem;
-					width: calc(210mm - 4rem);
-					height: calc(297mm - 1.5rem);
+					width: 210mm;
+					height: 297mm;
 					box-shadow: -3px 2px 6px 3px rgba(0, 0, 0, 0.5);
 					background-color: white;
 				}
@@ -90,8 +90,6 @@ function App(){
 					main {
 						margin: 0;
 						padding: 1.5rem 2rem 0 2rem;
-						width: 210mm;
-						height: calc(297mm - 1.5rem);
 						box-shadow: none;
 					}
 					#locale-selector { display: none; }

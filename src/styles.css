@@ -8,11 +8,13 @@ body, html{
 	background-color: #bbbbbb;
 }
 
+h2 {
+	font-size: 6mm;
+}
+
 body {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
+	min-width: 100vw;
+	min-height: 100vh;
 }
 
 @page {
@@ -48,4 +50,9 @@ li {
 
 .italic {
 	font-style: italic;
+}
+
+* {
+	box-sizing: border-box;
+	font-size: 4mm;
 }
