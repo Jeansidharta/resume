@@ -22,17 +22,21 @@ function findNavigatorLocale () {
 }
 
 export const LocaleProvider = (props) => {
-	const [locale, setLocale] = React.useState(findNavigatorLocale);
-	const localeState = {
+	const [locale, rawSetLocale] = React.useState(findNavigatorLocale);
+
+	function setLocale (newLocale) {
+		if (possibleLocales.find(p => p === newLocale)) setLocale(newLocale);
+		else {
+			console.error(`Trying to set invalid locale '${newLocale}'`)
+			rawSetLocale(defaultLocale)
+		}
+	}
+
+	const localize = obj => obj[locale] || obj[defaultLocale];
+
+	return <localeContext.Provider value={{
 		locale,
-		setLocale: newLocale => {
-			if (possibleLocales.find(p => p === newLocale)) setLocale(newLocale);
-			else {
-				console.error(`Trying to set invalid locale '${newLocale}'`)
-				setLocale(defaultLocale)
-			}
-		},
-		localize: obj => obj[locale] || obj[defaultLocale]
-	};
-	return <localeContext.Provider value={localeState} {...props} />
+		setLocale,
+		localize,
+	}} {...props} />
 }
