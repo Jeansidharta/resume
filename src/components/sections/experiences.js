@@ -27,8 +27,8 @@ const experiences = [
 			'pt-br': <>
 				<Italic>Pronto Combustíveis</Italic> é uma empresa de venda de combustíveis
 				para postos de bandeira branca. Minha função foi participar da equipe de
-				desenvolvimento do front-end de um aplicativo web. Aqui, trabalhamos com
-				técnologias como React, Typescript e GraphQL.
+				desenvolvimento do front-end de um aplicativo web utilizando técnologias
+				como React, Typescript e GraphQL.
 			</>,
 			'en-us': <>
 				<Italic>Pronto Combustíveis</Italic> is a company that sells fuel for

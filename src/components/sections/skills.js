@@ -13,32 +13,41 @@ function Category ({ name, description }) {
 const categories = [
 	{
 		name: {
-			'pt-br': <>Linguagens de programação</>,
-			'en-us': <>Programming languages</>,
+			'pt-br': <>
+				Stack front-end mais familiar
+			</>,
+			'en-us': <>
+				Most familiar front-end stack
+			</>,
 		},
 		description: {
-			'pt-br': <>Javascript (3 anos), C (3 anos), C# (6 meses).</>,
-			'en-us': <>Javascript (3 years), C (3 years), C# (6 months).</>,
+			'pt-br': <>
+				React com Next.js, Typescript, styled-components/material-ui e Redux.
+			</>,
+			'en-us': <>
+				React with Next.js, Typescript, styled-components/material-ui and Redux.
+			</>,
 		},
 	},
 	{
 		name: {
-			'pt-br': <>Soft skills</>,
-			'en-us': <>Programming languages</>,
+			'pt-br': <>Interesses</>,
+			'en-us': <>Interests</>,
 		},
 		description: {
-			'pt-br': <>Boa liderança, autodidata e proativo</>,
-			'en-us': <>Good leadership, lifelong learner and proactive.</>,
+			'pt-br': <>Desenvolvimento web front-end, Segurança de sistemas e redes de computadores</>,
+			'en-us': <>Front-end web development, System security and computer networks.</>,
 		},
 	},
 	{
 		name: {
-			'pt-br': <>Tecnologias web</>,
-			'en-us': <>Web technologies</>,
+			'pt-br': <>Outros conhecimentos</>,
+			'en-us': <>Other knowledges</>,
 		},
 		description: {
-			'pt-br': <>HTML, CSS, JavaScript, Typescript, React, React Native, Express.js, server-less functions, REST e GraphQL.</>,
-			'en-us': <>HTML, CSS, JavaScript, Typescript, React, React Native, Express.js, server-less functions, REST and GraphQL.</>,
+			'pt-br': <>Versionamento de código (git), metodologias ágeis (SCRUM) e análise de performance de páginas web</>,
+			// TODO
+			'en-us': <>TODO</>,
 		},
 	},
 	{
@@ -49,16 +58,6 @@ const categories = [
 		description: {
 			'pt-br': <>Português (nativo) e inglês (fluente).</>,
 			'en-us': <>Portuguese (native), English (fluent).</>,
-		},
-	},
-	{
-		name: {
-			'pt-br': <>Ferramentas</>,
-			'en-us': <>Tools</>,
-		},
-		description: {
-			'pt-br': <>Git com Github e Gitlab, Scrum, Firebase e Netlify.</>,
-			'en-us': <>Git with Github and Gitlab, Firebase and Netlify.</>,
 		},
 	},
 ]

@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import Header from "./components/header";
-import Education from "./components/sections/education";
+// import Education from "./components/sections/education";
 import Skills from "./components/sections/skills";
 import Experiences from "./components/sections/experiences";
 import PersonalInfo from "./components/sections/personal-info";
