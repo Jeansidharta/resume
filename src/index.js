@@ -71,8 +71,8 @@ function App(){
 				<Header/>
 				<PersonalInfo/>
 				<hr/>
-				<Education/>
-				<hr/>
+				{/* <Education/> */}
+				{/* <hr/> */}
 				<Skills/>
 				<hr/>
 				<Experiences/>

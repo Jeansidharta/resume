@@ -16,12 +16,36 @@ const Italic = ({ children }) => <span className='italic'>{children}</span>
 const experiences = [
 	{
 		title: {
+			'pt-br': <>Desenvolvedor web júnior no <Italic>Pronto Combustíveis</Italic></>,
+			'en-us': <>Junior web developer at <Italic>Pronto Combustíveis</Italic></>,
+		},
+		duration: {
+			'pt-br': <>22/06/2020 - hoje</>,
+			'en-us': <>06/22/2020 - today</>,
+		},
+		description: {
+			'pt-br': <>
+				<Italic>Pronto Combustíveis</Italic> é uma empresa de venda de combustíveis
+				para postos de bandeira branca. Minha função foi participar da equipe de
+				desenvolvimento do front-end de um aplicativo web. Aqui, trabalhamos com
+				técnologias como React, Typescript e GraphQL.
+			</>,
+			'en-us': <>
+				<Italic>Pronto Combustíveis</Italic> is a company that sells fuel for
+				gas stations. My job was to participate in a front-end development squad for
+				a fron-end web application. Here, we worked with technologies such as React,
+				Typescript and GraphQL.
+			</>,
+		},
+	},
+	{
+		title: {
 			'pt-br': <>Estágio de deselvolvimento web na <Italic>AJ.Estratégia</Italic></>,
 			'en-us': <>Web development internship at <Italic>AJ.Estratégia</Italic></>,
 		},
 		duration: {
-			'pt-br': <>04/02/2020 - hoje</>,
-			'en-us': <>02/04/2020 - today</>,
+			'pt-br': <>04/02/2020 - 15/06/2020 (4 meses)</>,
+			'en-us': <>02/04/2020 - 06/12/2020 (4 months)</>,
 		},
 		description: {
 			'pt-br': <>
@@ -45,7 +69,7 @@ const experiences = [
 			'en-us': <>Web development internship at <Italic>Liven</Italic></>,
 		},
 		duration: {
-			'pt-br': <>12/11/2019 - 14/02/2020 (3 mêses)</>,
+			'pt-br': <>12/11/2019 - 14/02/2020 (3 meses)</>,
 			'en-us': <>11/12/2019 - 02/14/2020 (3 months)</>,
 		},
 		description: {
