@@ -21,11 +21,22 @@ function findNavigatorLocale () {
 	}
 }
 
+function getInitialLocale () {
+	const storageLocale = localStorage.getItem('locale');
+
+	if (storageLocale) return storageLocale;
+	else return findNavigatorLocale();
+}
+
 export const LocaleProvider = (props) => {
-	const [locale, rawSetLocale] = React.useState(findNavigatorLocale);
+	const [locale, rawSetLocale] = React.useState(getInitialLocale);
+
+	React.useEffect(() => {
+		localStorage.setItem('locale', locale);
+	}, [locale]);
 
 	function setLocale (newLocale) {
-		if (possibleLocales.find(p => p === newLocale)) setLocale(newLocale);
+		if (possibleLocales.find(p => p === newLocale)) rawSetLocale(newLocale);
 		else {
 			console.error(`Trying to set invalid locale '${newLocale}'`)
 			rawSetLocale(defaultLocale)
