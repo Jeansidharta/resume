@@ -46,8 +46,7 @@ const categories = [
 		},
 		description: {
 			'pt-br': <>Versionamento de código (git), metodologias ágeis (SCRUM) e análise de performance de páginas web</>,
-			// TODO
-			'en-us': <>TODO</>,
+			'en-us': <>Version control (git), agile methods (SCRUM) and web page performance analysis</>,
 		},
 	},
 	{
