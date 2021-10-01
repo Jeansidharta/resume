@@ -22,10 +22,10 @@ const categories = [
 		},
 		description: {
 			'pt-br': <>
-				React com Next.js, Typescript, styled-components/material-ui, e Redux.
+				React com Next.js, Typescript, styled-components/material-ui, e Redux/Zustand.
 			</>,
 			'en-us': <>
-				React with Next.js, Typescript, styled-components/material-ui, and Redux.
+				React with Next.js, Typescript, styled-components/material-ui, and Redux/Zustand.
 			</>,
 		},
 	},
@@ -45,8 +45,8 @@ const categories = [
 			'en-us': <>Other knowledges</>,
 		},
 		description: {
-			'pt-br': <>Versionamento de código (git), metodologias ágeis (SCRUM), e análise de performance de páginas web</>,
-			'en-us': <>Version control (git), agile methods (SCRUM), and web page performance analysis</>,
+			'pt-br': <>Git, SCRUM, e análise de performance de páginas web</>,
+			'en-us': <>Git, SCRUM, and web page performance analysis</>,
 		},
 	},
 	{
