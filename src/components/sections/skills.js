@@ -35,8 +35,8 @@ const categories = [
 			'en-us': <>Interests</>,
 		},
 		description: {
-			'pt-br': <>Desenvolvimento web front-end, Segurança de sistemas e redes de computadores</>,
-			'en-us': <>Front-end web development, System security and computer networks.</>,
+			'pt-br': <>Desenvolvimento web front-end, Segurança de sistemas, infraestrutura em cloud, e DevOps</>,
+			'en-us': <>Front-end web development, System security, cloud infrastructure, and DevOps</>,
 		},
 	},
 	{
