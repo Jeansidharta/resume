@@ -27,13 +27,13 @@ const experiences = [
 			'pt-br': <>
 				<Italic>Pronto Combustíveis</Italic> é uma empresa de venda de combustíveis
 				para postos de bandeira branca. Minha função foi participar da equipe de
-				desenvolvimento do front-end de um aplicativo web utilizando técnologias
+				desenvolvimento do front-end de aplicativos web utilizando técnologias
 				como React, Typescript e GraphQL.
 			</>,
 			'en-us': <>
 				<Italic>Pronto Combustíveis</Italic> is a company that sells fuel for
 				gas stations. My job was to participate in a front-end development squad for
-				a fron-end web application. Here, we worked with technologies such as React,
+				fron-end web applications. Here, we worked with technologies such as React,
 				Typescript and GraphQL.
 			</>,
 		},
