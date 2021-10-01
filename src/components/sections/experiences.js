@@ -114,8 +114,8 @@ const experiences = [
 			'en-us': <>Coordinator at USPCodeLab</>,
 		},
 		duration: {
-			'pt-br': <>03/2019 - hoje</>,
-			'en-us': <>03/2019 - today</>
+			'pt-br': <>2019 - 2020 (1 ano)</>,
+			'en-us': <>2019 - 2020 (1 year)</>
 		},
 		description: {
 			'pt-br': <>
