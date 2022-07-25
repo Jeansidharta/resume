@@ -63,6 +63,9 @@ function DocumentTitleUpdater () {
 }
 
 function App(){
+
+
+const Divider = <hr style={{ margin: '12px 0' }}/>
 	return (
 		<LocaleProvider>
 			<LocaleSelector />
@@ -70,11 +73,11 @@ function App(){
 			<main>
 				<Header/>
 				<PersonalInfo/>
-				<hr/>
+				{Divider}
 				{/* <Education/> */}
 				{/* <hr/> */}
 				<Skills/>
-				<hr/>
+				{Divider}
 				<Experiences/>
 			</main>
 			<style>{`
