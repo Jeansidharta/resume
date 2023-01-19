@@ -42,8 +42,8 @@ const categories = [
 			'en-us': <>Other knowledges</>,
 		},
 		description: {
-			'pt-br': <>Git, SCRUM, e análise de performance de páginas web</>,
-			'en-us': <>Git, SCRUM, and web page performance analysis</>,
+			'pt-br': <>Git, Scrum, Vue.js, e análise de performance de páginas web</>,
+			'en-us': <>Git, Scrum, Vue.js, and web page performance analysis</>,
 		},
 	},
 	{
