@@ -35,9 +35,10 @@ body {
 }
 
 aside {
-	font-size: 0.75rem;
-	transform: translate(0, -3px);
+	font-size: 1rem;
+	transform: translate(0, 0px);
 	color: var(--color-grayed);
+	margin-bottom: 0.5rem;
 }
 
 ul {

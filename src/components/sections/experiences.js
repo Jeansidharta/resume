@@ -33,10 +33,10 @@ const experiences = [
 					<Italic>Tech Viz</Italic> é uma startup de solução de dados para diagnósticos de
 					Diversidade, Equidade e Inclusão (DE&I). Participei dessa empresa desde a sua formação,
 					projetando e gerenciando todas as necessidade de tecnologia, tais como o desenvolvimento
-					de seu produto de censo e de sua <Italic>Landing Page</Italic>. Esses projetos foram
-					construidos usando React com Nextjs em Typescript e foram implantados na AWS usando
-					Terraform. Além disso, fui responsável por determinar os requisitos de negócio a partir
-					das demandas da equipe e dar suporte para quaisquer problemas ligados aos projetos.
+					de seu produto de censo e de sua <Italic>Landing Page</Italic>. Construi esses projetos
+					usando React com Nextjs em Typescript e os implantei na AWS usando Terraform. Além disso,
+					fui responsável por determinar os requisitos de negócio a partir das demandas da equipe e
+					dar suporte para quaisquer problemas ligados aos projetos.
 				</>
 			),
 		},
@@ -55,11 +55,10 @@ const experiences = [
 		description: {
 			'pt-br': (
 				<>
-					A <Italic>Predify</Italic> é uma empresa de precificação de produtos e serviços. Junto de
-					uma equipe de <Italic>back-end</Italic>, uma <Italic>designer</Italic> e um{' '}
-					<Italic>project owner</Italic>, utilizei <Italic>Vue.js</Italic> para construi plataformas
-					customizadas para múltiplos clientes, entendendo seus requisitos e modelos de negócio para
-					entregar o máximo de valor
+					A <Italic>Predify</Italic> é uma empresa de precificação de produtos e serviços. Utilizei{' '}
+					<Italic>Vue.js</Italic> e <Italic>Vuetify</Italic> para construi plataformas customizadas
+					para múltiplos clientes, entendendo seus requisitos e modelos de negócio para entregar o
+					máximo de valor.
 				</>
 			),
 		},
