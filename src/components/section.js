@@ -1,8 +1,8 @@
-import React from "react";
-import { useLocale } from "../context/locale";
+import React from 'react';
+import { useLocale } from '../context/locale';
 
-export default function Section({name = "no-name", children, className}){
-	const { localize } = useLocale()
+export default function Section({ name = 'no-name', children, className }) {
+	const { localize } = useLocale();
 	return (
 		<section className="section">
 			<h2 style={{ fontWeight: 'bold' }}>{localize(name)}</h2>

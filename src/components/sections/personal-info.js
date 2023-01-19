@@ -1,13 +1,14 @@
-import React from "react";
-import Section from "../section";
-import { useLocale } from "../../context/locale";
+import React from 'react';
+import Section from '../section';
+import { useLocale } from '../../context/locale';
 
-function Info ({ title, content }) {
-	const { localize } = useLocale()
-	return <p style={{ margin: 0, fontStyle: 'normal' }}>
-		<strong>{localize(title)}:</strong>
-		{' '}{localize(content)}
-	</p>
+function Info({ title, content }) {
+	const { localize } = useLocale();
+	return (
+		<p style={{ margin: 0, fontStyle: 'normal' }}>
+			<strong>{localize(title)}:</strong> {localize(content)}
+		</p>
+	);
 }
 
 const infos = [
@@ -27,8 +28,16 @@ const infos = [
 			'en-us': <>Github</>,
 		},
 		content: {
-			'pt-br': <><a href="https://www.github.com/Jeansidharta">github.com/Jeansidharta</a></>,
-			'en-us': <><a href="https://www.github.com/Jeansidharta">github.com/Jeansidharta</a></>,
+			'pt-br': (
+				<>
+					<a href="https://www.github.com/Jeansidharta">github.com/Jeansidharta</a>
+				</>
+			),
+			'en-us': (
+				<>
+					<a href="https://www.github.com/Jeansidharta">github.com/Jeansidharta</a>
+				</>
+			),
 		},
 	},
 	{
@@ -51,13 +60,21 @@ const infos = [
 			'en-us': <>Rua Jacinto Favoreto, 301, apt 14 - São Carlos - SP - 13560-515</>,
 		},
 	},
-]
+];
 
-export default function Skills(){
+export default function Skills() {
 	return (
-		<Section name={{ 'pt-br': 'Informações pessoais', 'en-us': 'Personal information'}} className="personal-info">
+		<Section
+			name={{
+				'pt-br': 'Informações pessoais',
+				'en-us': 'Personal information',
+			}}
+			className="personal-info"
+		>
 			<address>
-				{infos.map((props, index) => <Info key={index} {...props} />)}
+				{infos.map((props, index) => (
+					<Info key={index} {...props} />
+				))}
 			</address>
 		</Section>
 	);

@@ -1,8 +1,9 @@
-:root{
+:root {
 	--color-grayed: #606060;
 }
 
-body, html{
+body,
+html {
 	margin: 0;
 	padding: 0;
 	background-color: #bbbbbb;
@@ -22,7 +23,7 @@ body {
 	background-color: white;
 }
 
-@media print{
+@media print {
 	a {
 		text-decoration: none;
 		color: black;
@@ -33,7 +34,7 @@ body {
 	}
 }
 
-aside{
+aside {
 	font-size: 0.75rem;
 	transform: translate(0, -3px);
 	color: var(--color-grayed);

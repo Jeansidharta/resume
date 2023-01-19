@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-export default function Header(){
+export default function Header() {
 	return (
 		<header>
 			<h1 className="my-giant-ass-name bold">jean sidharta guzman</h1>

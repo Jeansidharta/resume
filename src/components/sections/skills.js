@@ -1,32 +1,27 @@
-import React from "react";
-import Section from "../section";
-import { useLocale } from "../../context/locale";
+import React from 'react';
+import Section from '../section';
+import { useLocale } from '../../context/locale';
 
-function Category ({ name, description }) {
-	const { localize } = useLocale()
-	return <li>
-		<strong>{localize(name)}:</strong>
-		{' '}{localize(description)}
-	</li>
+function Category({ name, description }) {
+	const { localize } = useLocale();
+	return (
+		<li>
+			<strong>{localize(name)}:</strong> {localize(description)}
+		</li>
+	);
 }
 
 const categories = [
 	{
 		name: {
-			'pt-br': <>
-				Stack front-end mais familiar
-			</>,
-			'en-us': <>
-				Most familiar front-end stack
-			</>,
+			'pt-br': <>Stack front-end mais familiar</>,
+			'en-us': <>Most familiar front-end stack</>,
 		},
 		description: {
-			'pt-br': <>
-				React com Next.js, Typescript, styled-components/material-ui, e Redux/Zustand.
-			</>,
-			'en-us': <>
-				React with Next.js, Typescript, styled-components/material-ui, and Redux/Zustand.
-			</>,
+			'pt-br': <>React com Next.js, Typescript, styled-components/material-ui, e Redux/Zustand.</>,
+			'en-us': (
+				<>React with Next.js, Typescript, styled-components/material-ui, and Redux/Zustand.</>
+			),
 		},
 	},
 	{
@@ -35,7 +30,9 @@ const categories = [
 			'en-us': <>Interests</>,
 		},
 		description: {
-			'pt-br': <>Desenvolvimento web front-end, Segurança de sistemas, infraestrutura em cloud, e DevOps</>,
+			'pt-br': (
+				<>Desenvolvimento web front-end, Segurança de sistemas, infraestrutura em cloud, e DevOps</>
+			),
 			'en-us': <>Front-end web development, System security, cloud infrastructure, and DevOps</>,
 		},
 	},
@@ -59,13 +56,15 @@ const categories = [
 			'en-us': <>Portuguese (native), English (fluent).</>,
 		},
 	},
-]
+];
 
-export default function Skills(){
+export default function Skills() {
 	return (
-		<Section name={{ 'pt-br': 'Habilidades', 'en-us': 'Skills'}} className="skills">
+		<Section name={{ 'pt-br': 'Habilidades', 'en-us': 'Skills' }} className="skills">
 			<ul>
-				{categories.map((props, index) => <Category key={index} {...props} />)}
+				{categories.map((props, index) => (
+					<Category key={index} {...props} />
+				))}
 			</ul>
 		</Section>
 	);

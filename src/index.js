@@ -1,17 +1,17 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import Header from "./components/header";
+import Header from './components/header';
 // import Education from "./components/sections/education";
-import Skills from "./components/sections/skills";
-import Experiences from "./components/sections/experiences";
-import PersonalInfo from "./components/sections/personal-info";
-import { LocaleProvider, useLocale } from "./context/locale";
-import "./styles.css";
+import Skills from './components/sections/skills';
+import Experiences from './components/sections/experiences';
+import PersonalInfo from './components/sections/personal-info';
+import { LocaleProvider, useLocale } from './context/locale';
+import './styles.css';
 
 const LocaleSelector = () => {
 	const { setLocale, locale } = useLocale();
-	const input = (event) => setLocale(event.target.value);
+	const input = event => setLocale(event.target.value);
 	return (
 		<div
 			id="locale-selector"
@@ -28,9 +28,9 @@ const LocaleSelector = () => {
 				borderBottom: '1px solid black',
 			}}
 		>
-			<label htmlFor='locale-selector'>Language:</label>
+			<label htmlFor="locale-selector">Language:</label>
 			<select
-				id='locale-selector'
+				id="locale-selector"
 				onInput={input}
 				defaultValue={locale}
 				style={{
@@ -44,41 +44,39 @@ const LocaleSelector = () => {
 					padding: '0.5rem 1rem',
 				}}
 			>
-				<option value='pt-br'>pt-br</option>
-				<option value='en-us'>en-us</option>
+				<option value="pt-br">pt-br</option>
+				<option value="en-us">en-us</option>
 			</select>
 		</div>
-	)
-}
+	);
+};
 
-function DocumentTitleUpdater () {
+function DocumentTitleUpdater() {
 	const { locale } = useLocale();
 	const title = {
 		'pt-br': 'Currículo-JeanSidharta',
 		'en-us': 'Resume-JeanSidharta',
 	}[locale];
 	document.title = title;
-	console.log(locale)
+	console.log(locale);
 	return null;
 }
 
-function App(){
-
-
-const Divider = <hr style={{ margin: '12px 0' }}/>
+function App() {
+	const Divider = <hr style={{ margin: '12px 0' }} />;
 	return (
 		<LocaleProvider>
 			<LocaleSelector />
 			<DocumentTitleUpdater />
 			<main>
-				<Header/>
-				<PersonalInfo/>
+				<Header />
+				<PersonalInfo />
 				{Divider}
 				{/* <Education/> */}
 				{/* <hr/> */}
-				<Skills/>
+				<Skills />
 				{Divider}
-				<Experiences/>
+				<Experiences />
 			</main>
 			<style>{`
 				main{
@@ -102,4 +100,4 @@ const Divider = <hr style={{ margin: '12px 0' }}/>
 	);
 }
 
-ReactDOM.render(<App/>, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'));
