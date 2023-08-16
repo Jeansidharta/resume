@@ -43,7 +43,12 @@ const categories = [
 		},
 		description: {
 			'pt-br': <>Git, Scrum, Vue.js, e análise de performance de páginas web</>,
-			'en-us': <>Git, Scrum, Vue.js, and web page performance analysis</>,
+			'en-us': (
+				<>
+					Git, SQL, AWS Lambdas, AWS DynamoDB, Terraform, Scrum, Vue.js, web page performance
+					analysis and Rust
+				</>
+			),
 		},
 	},
 	{

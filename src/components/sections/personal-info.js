@@ -47,7 +47,7 @@ const infos = [
 		},
 		content: {
 			'pt-br': <>(019) 996-200-512</>,
-			'en-us': <>+55 (019) 996-200-512</>,
+			'en-us': <>(330) 599-9526</>,
 		},
 	},
 	{
@@ -57,7 +57,7 @@ const infos = [
 		},
 		content: {
 			'pt-br': <>Rua Jacinto Favoreto, 301, apt 14 - São Carlos - SP - 13560-515</>,
-			'en-us': <>Rua Jacinto Favoreto, 301, apt 14 - São Carlos - SP - 13560-515</>,
+			'en-us': <>3435 Hopkins Rd, Youngstown - Ohio</>,
 		},
 	},
 ];

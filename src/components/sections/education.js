@@ -24,7 +24,7 @@ const infos = [
 		},
 		duration: {
 			'pt-br': <>2017 - hoje</>,
-			'en-us': <>2017 - today</>,
+			'en-us': <>2017 - 2020 (Incomplete) </>,
 		},
 	},
 ];

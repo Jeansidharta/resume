@@ -23,11 +23,28 @@ const experiences = [
 					Reponsável de Tecnologia na <Italic>Tech Viz</Italic>
 				</>
 			),
+			'en-us': (
+				<>
+					Technical Lead at <Italic>Tech Viz</Italic>
+				</>
+			),
 		},
 		duration: {
 			'pt-br': <>2020 - 2023 (3 anos)</>,
+			'en-us': <>03/2020 - 07/2023 (3 years)</>,
 		},
 		description: {
+			'en-us': (
+				<>
+					<Italic>Tech Viz</Italic> is a data solution startup for diagnostics of Diversity, Equity
+					and Inclusion (DE&I). I have been part of this company since its formation, designing and
+					managing all technology needs, such as developing their census product and their Landing
+					Page. I built these projects using React with Nextjs and Typescript for front-end,
+					DynamoDB and AWS lambdas for the back-end, and Terraform as a deployment tool.
+					Furthermore, I was responsible for determining the business requirements from the team's
+					demands and provide support for any problems related to the projects.
+				</>
+			),
 			'pt-br': (
 				<>
 					<Italic>Tech Viz</Italic> é uma startup de solução de dados para diagnósticos de
@@ -43,6 +60,11 @@ const experiences = [
 	},
 	{
 		title: {
+			'en-us': (
+				<>
+					Mid-level front-end developer at <Italic>Predify</Italic>
+				</>
+			),
 			'pt-br': (
 				<>
 					Desenvolvedor front-end pleno na <Italic>Predify</Italic>
@@ -51,8 +73,16 @@ const experiences = [
 		},
 		duration: {
 			'pt-br': <>27/07/2022 - 17/12/2022 (4 meses)</>,
+			'en-us': <>07/27/2022 - 12/17/2022 (4 months)</>,
 		},
 		description: {
+			'en-us': (
+				<>
+					Predify is a pricing company for products and services. I used Vue.js and Vuetify for
+					building custom platforms for multiple customers, understanding their requirements and
+					business models to create the best software to fit their individual needs
+				</>
+			),
 			'pt-br': (
 				<>
 					A <Italic>Predify</Italic> é uma empresa de precificação de produtos e serviços. Utilizei{' '}
@@ -93,8 +123,9 @@ const experiences = [
 				<>
 					{/* TODO - Update */}
 					<Italic>Pronto Combustíveis</Italic> is a company that sells fuel for gas stations. My job
-					was to participate in a front-end development squad for fron-end web applications. Here,
-					we worked with technologies such as React, Typescript and GraphQL.
+					was to participate in a front-end development squad for an internal application that
+					managed fuel sales and cargo distribution. Here, we worked with React, Typescript and
+					GraphQL.
 				</>
 			),
 		},
