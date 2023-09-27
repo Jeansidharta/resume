@@ -14,6 +14,14 @@ function Info({ title, content }) {
 const infos = [
 	{
 		title: {
+			'en-us': <>Immigrant Status</>,
+		},
+		content: {
+			'en-us': <>Greencard holder</>,
+		},
+	},
+	{
+		title: {
 			'pt-br': <>Email</>,
 			'en-us': <>Email</>,
 		},

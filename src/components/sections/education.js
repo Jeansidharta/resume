@@ -20,7 +20,7 @@ const infos = [
 			'pt-br': (
 				<>Bacharelado em ciência da computação: Universidade de São Paulo (São Carlos, SP)</>
 			),
-			'en-us': <>Bachelor of Computer Science: University of São Paulo (São Carlos, SP)</>,
+			'en-us': <>Bachelor of Computer Science: University of São Paulo (São Carlos, SP, Brazil)</>,
 		},
 		duration: {
 			'pt-br': <>2017 - hoje</>,
