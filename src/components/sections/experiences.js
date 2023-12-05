@@ -140,47 +140,10 @@ const experiences = [
 			),
 			'en-us': (
 				<>
-					{/* TODO - Update */}
 					<Italic>Pronto Combustíveis</Italic> is a company that sells fuel for gas stations. My job
 					was to participate in a front-end development squad for an internal application that
 					managed fuel sales and cargo distribution. Here, we worked with React, Typescript and
 					GraphQL.
-				</>
-			),
-		},
-	},
-	{
-		title: {
-			'pt-br': (
-				<>
-					Estágio de deselvolvimento web na <Italic>Liven</Italic>
-				</>
-			),
-			'en-us': (
-				<>
-					Web development internship at <Italic>Liven</Italic>
-				</>
-			),
-		},
-		duration: {
-			'pt-br': <>12/11/2019 - 14/02/2020 (3 meses)</>,
-			'en-us': <>11/12/2019 - 02/14/2020 (3 months)</>,
-		},
-		description: {
-			'pt-br': (
-				<>
-					<Italic>Liven</Italic> é uma startup com o modelo de venture builder em São Carlos. Nesta
-					empresa, trabalhei principalmente como deselvolvedor front-end, encarregado de construir
-					um aplicativo web de banco utilizando React e Redux, junto de um time composto por mais um
-					desenvolvedor back-end e um scrum master.
-				</>
-			),
-			'en-us': (
-				<>
-					{/* TODO - Update */}
-					<Italic>Liven</Italic> is a venture builder startup in São Carlos. There, I mainly worked
-					as a front-end developer in charge of building a PWA application using react and Redux,
-					alongside a back-end developer and a scrum master.
 				</>
 			),
 		},
