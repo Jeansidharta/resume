@@ -4,7 +4,7 @@ export default function Header() {
 	return (
 		<header>
 			<h1 className="my-giant-ass-name bold">jean sidharta guzman</h1>
-			<aside className="my-cargo">Web Developer</aside>
+			<aside className="my-cargo">Retail Associate</aside>
 			<style>{`
 				header .my-cargo{
 					font-weight: bold

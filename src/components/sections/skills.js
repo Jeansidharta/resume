@@ -14,51 +14,18 @@ function Category({ name, description }) {
 const categories = [
 	{
 		name: {
-			'pt-br': <>Stack front-end mais familiar</>,
-			'en-us': <>Most familiar front-end stack</>,
+			'en-us': <>General</>,
 		},
 		description: {
-			'pt-br': <>React com Next.js, Typescript, styled-components/material-ui, e Redux/Zustand.</>,
-			'en-us': (
-				<>React with Next.js, Typescript, styled-components/material-ui, and Redux/Zustand.</>
-			),
+			'en-us': <>basic math, communication, teamwork, attention to detail, stamina, comfortable with computers</>,
 		},
 	},
 	{
 		name: {
-			'pt-br': <>Interesses</>,
-			'en-us': <>Interests</>,
-		},
-		description: {
-			'pt-br': (
-				<>Desenvolvimento web front-end, Segurança de sistemas, infraestrutura em cloud, e DevOps</>
-			),
-			'en-us': <>Front-end web development, System security, cloud infrastructure, and DevOps</>,
-		},
-	},
-	{
-		name: {
-			'pt-br': <>Outros conhecimentos</>,
-			'en-us': <>Other knowledges</>,
-		},
-		description: {
-			'pt-br': <>Git, Scrum, Vue.js, e análise de performance de páginas web</>,
-			'en-us': (
-				<>
-					Git, SQL, AWS Lambdas, AWS DynamoDB, Terraform, Scrum, Vue.js, web page performance
-					analysis and Rust
-				</>
-			),
-		},
-	},
-	{
-		name: {
-			'pt-br': <>Línguas</>,
 			'en-us': <>Languages</>,
 		},
 		description: {
-			'pt-br': <>Português (nativo), inglês (fluente).</>,
-			'en-us': <>Portuguese (native), English (fluent).</>,
+			'en-us': <>Portuguese (native), English (fluent), Spanish (Basic).</>,
 		},
 	},
 ];

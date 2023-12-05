@@ -32,24 +32,6 @@ const infos = [
 	},
 	{
 		title: {
-			'pt-br': <>Github</>,
-			'en-us': <>Github</>,
-		},
-		content: {
-			'pt-br': (
-				<>
-					<a href="https://www.github.com/Jeansidharta">github.com/Jeansidharta</a>
-				</>
-			),
-			'en-us': (
-				<>
-					<a href="https://www.github.com/Jeansidharta">github.com/Jeansidharta</a>
-				</>
-			),
-		},
-	},
-	{
-		title: {
 			'pt-br': <>Celular</>,
 			'en-us': <>Phone</>,
 		},
