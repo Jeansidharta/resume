@@ -18,6 +18,25 @@ const Italic = ({ children }) => <span className="italic">{children}</span>;
 const experiences = [
 	{
 		title: {
+			'en-us': (
+				<>
+					Retail associate at <Italic>Walmart</Italic>
+				</>
+			),
+		},
+		duration: {
+			'en-us': <>11/2023 - now</>,
+		},
+		description: {
+			'en-us': (
+				<>
+					As a front-end retail associate, I have demonstrated a strong understanding of customer service and a keen ability to meet any customer's needs. I have acquired proficiency in utilizing point-of-sale systems and handling cash transactions with accuracy while maintaining a friendly demeanor.
+				</>
+			),
+		},
+	},
+	{
+		title: {
 			'pt-br': (
 				<>
 					Reponsável de Tecnologia na <Italic>Tech Viz</Italic>
