@@ -15,25 +15,30 @@ const categories = [
 	{
 		name: {
 			'pt-br': <>Stack front-end mais familiar</>,
-			'en-us': <>Most familiar front-end stack</>,
+			'en-us': <>Front-end tools</>,
+			//'en-us': <>Most familiar front-end stack</>,
 		},
 		description: {
 			'pt-br': <>React com Next.js, Typescript, styled-components/material-ui, e Redux/Zustand.</>,
 			'en-us': (
-				<>React with Next.js, Typescript, styled-components/material-ui, and Redux/Zustand.</>
+				//<>React with Next.js, Typescript, styled-components/material-ui, and Redux/Zustand.</>
+				<>
+					Typescript, React, vite, Next.js, vue, vuetify, astro, styled-components, material-ui, and
+					Redux, zustand, openapi.
+				</>
 			),
 		},
 	},
 	{
 		name: {
 			'pt-br': <>Interesses</>,
-			'en-us': <>Interests</>,
+			'en-us': <>Other languages</>,
 		},
 		description: {
 			'pt-br': (
 				<>Desenvolvimento web front-end, Segurança de sistemas, infraestrutura em cloud, e DevOps</>
 			),
-			'en-us': <>Front-end web development, System security, cloud infrastructure, and DevOps</>,
+			'en-us': <>C, Zig, Rust, Haskell</>,
 		},
 	},
 	{
@@ -43,12 +48,7 @@ const categories = [
 		},
 		description: {
 			'pt-br': <>Git, Scrum, Vue.js, e análise de performance de páginas web</>,
-			'en-us': (
-				<>
-					Git, SQL, AWS Lambdas, AWS DynamoDB, Terraform, Scrum, Vue.js, web page performance
-					analysis and Rust
-				</>
-			),
+			'en-us': <>Git, SQL, AWS Lambdas, AWS DynamoDB, Terraform, agile with scrum</>,
 		},
 	},
 	{

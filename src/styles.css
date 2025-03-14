@@ -1,5 +1,5 @@
 :root {
-	--color-grayed: #606060;
+	--color-grayed: #404040;
 }
 
 body,
@@ -43,11 +43,10 @@ aside {
 
 ul {
 	margin: 0;
-	padding: 0;
+	padding: 8px 16px;
 }
 li {
 	margin: 0;
-	list-style: none;
 }
 
 .italic {

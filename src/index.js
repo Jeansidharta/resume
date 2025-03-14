@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Header from './components/header';
-import Education from './components/sections/education';
 import Skills from './components/sections/skills';
 import Experiences from './components/sections/experiences';
 import PersonalInfo from './components/sections/personal-info';
@@ -10,8 +9,13 @@ import { LocaleProvider, useLocale } from './context/locale';
 import './styles.css';
 
 const LocaleSelector = () => {
-	const { setLocale, locale } = useLocale();
-	const input = event => setLocale(event.target.value);
+	const { setEnglish, setPortuguese, locale } = useLocale();
+	const input = event => {
+		const locale = event.target.value;
+		if (locale === 'en-us') setEnglish();
+		else if (locale === 'pt-br') setPortuguese();
+		else throw new Error(`Unknown locale ${locale}`);
+	};
 	return (
 		<div
 			id="locale-selector"
@@ -63,7 +67,9 @@ function DocumentTitleUpdater() {
 }
 
 function App() {
-	const Divider = <hr style={{ margin: '12px 0' }} />;
+	const Divider = (
+		<div style={{ margin: '12px 0', height: 1, width: '100%', borderTop: '2px solid #bbbbbb' }} />
+	);
 	return (
 		<LocaleProvider>
 			<LocaleSelector />
@@ -72,11 +78,8 @@ function App() {
 				<Header />
 				<PersonalInfo />
 				{Divider}
-				<Education />
-				{/* <hr/> */}
-				<Skills />
-				{Divider}
 				<Experiences />
+				<Skills />
 			</main>
 			<style>{`
 				main{
