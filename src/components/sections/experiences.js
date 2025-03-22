@@ -39,14 +39,19 @@ export function ExperiencesEnglish() {
 			<Experience
 				title={
 					<>
-						Technical Lead at <Italic>Tech Viz</Italic>{' '}
+						Technical Lead at{' '}
+						<a href="https://www.techviz.com.br/">
+							<Italic>Tech Viz</Italic>
+						</a>
 					</>
 				}
 				duration="03/2020 - 07/2023 (3 years)"
 			>
-				<Italic>Tech Viz</Italic> is a data solution startup for diagnostics of Diversity, Equity
-				and Inclusion (DE&I). It was founded in 2020; in 2023, it had a{' '}
-				<strong>valuation of R$500,000.00</strong>.
+				<a href="https://www.techviz.com.br/">
+					<Italic>Tech Viz</Italic>
+				</a>{' '}
+				is a data solution startup for diagnostics of Diversity, Equity and Inclusion (DE&I). It was
+				founded in 2020; in 2023, it had a <strong>valuation of R$500,000.00</strong>.
 				<ul>
 					<li>
 						<strong>Engineered all technology-related requirements</strong>, such as developing
@@ -57,10 +62,10 @@ export function ExperiencesEnglish() {
 						<strong>directly talking to clients and customers</strong>.
 					</li>
 					<li>
-						Created a census product using <strong>React</strong>, <strong>Nextjs</strong>, and{' '}
-						<strong>Typescript</strong> for front-end; <strong>DynamoDB</strong> as a database;{' '}
-						<strong>AWS lambdas</strong> with a <strong>Nodejs</strong> runtime for the back-end;
-						and <strong>Terraform</strong> as a deployment tool.
+						Created a census product with <strong>React</strong>, <strong>Nextjs</strong>, and{' '}
+						<strong>Typescript</strong> as the front-end; <strong>DynamoDB</strong> as the database;{' '}
+						<strong>AWS lambdas</strong> with a <strong>Nodejs</strong> runtime as the back-end; and{' '}
+						<strong>Terraform</strong> as a deployment tool.
 					</li>
 					<li>
 						<strong>Managed a team</strong> of developers and data scientists to create client
@@ -71,21 +76,27 @@ export function ExperiencesEnglish() {
 			<Experience
 				title={
 					<>
-						Mid-level front-end developer at <Italic>Predify</Italic>
+						Mid-level front-end developer at{' '}
+						<a href="https://predify.me/">
+							<Italic>Predify</Italic>
+						</a>
 					</>
 				}
 				duration="07/27/2022 - 12/17/2022 (4 months)"
 			>
-				<Italic>Predify</Italic> is one of the <strong>largest pricing companies</strong> in Brazil
-				for products and services.
+				<a href="https://predify.me/">
+					<Italic>Predify</Italic>
+				</a>{' '}
+				is one of the <strong>largest pricing companies</strong> in Brazil for products and
+				services.
 				<ul>
 					<li>
 						Worked close to customers to <strong>understand their business model</strong> and
 						provide automated solutions that would maximize their revenue.
 					</li>
 					<li>
-						Used <strong>Vue.js</strong> and <strong>Vuetify</strong> in the front-end.{' '}
-						<strong>C#</strong> and <strong>dotnet</strong> as the backend.{' '}
+						Used <strong>Vue.js</strong> and <strong>Vuetify</strong> as the front-end,{' '}
+						<strong>C#</strong> and <strong>dotnet</strong> as the backend, and{' '}
 						<strong>PostgreSQL</strong> as the database.
 					</li>
 				</ul>
@@ -93,14 +104,19 @@ export function ExperiencesEnglish() {
 			<Experience
 				title={
 					<>
-						Junior web developer at <Italic>Pronto Combustíveis</Italic>
+						Junior web developer at{' '}
+						<a href="https://www.linkedin.com/company/pronto-combustiveis/">
+							<Italic>Pronto Combustíveis</Italic>
+						</a>
 					</>
 				}
 				duration="06/22/2020 - 07/27/2022 (2 years)"
 			>
-				<Italic>Pronto Combustiveis</Italic> provides a{' '}
-				<strong>platform for fuel delivery solutions</strong>. Customers can compare the price of
-				fuel and order from its platform. It also provides finance for white flag stations.
+				<a href="https://www.linkedin.com/company/pronto-combustiveis/">
+					<Italic>Pronto Combustiveis</Italic>
+				</a>{' '}
+				provides a <strong>platform for fuel delivery solutions</strong>. Customers can compare the
+				price of fuel and order from its platform. It also provides finance for white flag stations.
 				<ul>
 					<li>
 						Participated in a <strong>front-end development squad</strong> for an internal
@@ -109,7 +125,7 @@ export function ExperiencesEnglish() {
 					<li>
 						Worked on a company-wide internal tool that{' '}
 						<strong>
-							managed purchases, customer information, fuel delivery and truck routing
+							managed purchases, customer information, fuel delivery, and truck routing
 						</strong>
 						.
 					</li>
@@ -117,10 +133,10 @@ export function ExperiencesEnglish() {
 						Worked on the <strong>fuel ordering company app</strong>, with hundreds of daily users.
 					</li>
 					<li>
-						Used <strong>React</strong> and <strong>Typescript</strong> in the front-end,{' '}
-						<strong>GraphQL</strong>
-						and <strong>NodeJS</strong> in the back-end, <strong>PostgreSQL</strong> as the database
-						and <strong>AWS</strong> as the cloud provider.
+						Used <strong>React</strong> and <strong>Typescript</strong> as the front-end,{' '}
+						<strong>GraphQL</strong> and <strong>NodeJS</strong> as the back-end,{' '}
+						<strong>PostgreSQL</strong> as the database, and <strong>AWS</strong> as the cloud
+						provider.
 					</li>
 				</ul>
 			</Experience>
