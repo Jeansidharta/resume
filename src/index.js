@@ -5,6 +5,7 @@ import Header from './components/header';
 import Skills from './components/sections/skills';
 import Experiences from './components/sections/experiences';
 import PersonalInfo from './components/sections/personal-info';
+import Contributions from './components/sections/contributions.js';
 import { LocaleProvider, useLocale } from './context/locale';
 import './styles.css';
 

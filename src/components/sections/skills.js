@@ -15,7 +15,7 @@ const categories = [
 	{
 		name: {
 			'pt-br': <>Stack front-end mais familiar</>,
-			'en-us': <>Front-end tools</>,
+			'en-us': <>Web tools</>,
 			//'en-us': <>Most familiar front-end stack</>,
 		},
 		description: {
@@ -23,22 +23,10 @@ const categories = [
 			'en-us': (
 				//<>React with Next.js, Typescript, styled-components/material-ui, and Redux/Zustand.</>
 				<>
-					Typescript, React, vite, Next.js, vue, vuetify, astro, styled-components, material-ui, and
-					Redux, zustand, openapi.
+					Typescript, React, Vite, Next.js, Vue, Vuetify, Astro, Styled-components, Material-ui,
+					Redux, Zustand, Node.js, SQL databases, GraphQL, Openapi.
 				</>
 			),
-		},
-	},
-	{
-		name: {
-			'pt-br': <>Interesses</>,
-			'en-us': <>Other languages</>,
-		},
-		description: {
-			'pt-br': (
-				<>Desenvolvimento web front-end, Segurança de sistemas, infraestrutura em cloud, e DevOps</>
-			),
-			'en-us': <>C, Zig, Rust, Haskell</>,
 		},
 	},
 	{
@@ -48,7 +36,11 @@ const categories = [
 		},
 		description: {
 			'pt-br': <>Git, Scrum, Vue.js, e análise de performance de páginas web</>,
-			'en-us': <>Git, SQL, AWS Lambdas, AWS DynamoDB, Terraform, agile with scrum</>,
+			'en-us': (
+				<>
+					Linux, C, Zig, Rust, Haskell, Git, AWS Lambdas, AWS DynamoDB, Terraform, agile with scrum
+				</>
+			),
 		},
 	},
 	{
@@ -67,6 +59,11 @@ export default function Skills() {
 	return (
 		<Section name={{ 'pt-br': 'Habilidades', 'en-us': 'Skills' }} className="skills">
 			<ul>
+				<li>
+					<strong>Open Source Experience</strong>: Contributed to multiple open-source projects,
+					such as <strong>openscad-LSP</strong>, <strong>nvim-neoclip.lua</strong>,{' '}
+					<strong>zig-evdev</strong>, <strong>home-manager</strong>, and many others more.
+				</li>
 				{categories.map((props, index) => (
 					<Category key={index} {...props} />
 				))}

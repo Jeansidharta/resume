@@ -45,18 +45,28 @@ export function ExperiencesEnglish() {
 				duration="03/2020 - 07/2023 (3 years)"
 			>
 				<Italic>Tech Viz</Italic> is a data solution startup for diagnostics of Diversity, Equity
-				and Inclusion (DE&I). It was founded in 2020; in 2023, it had a valuation of R$500,000.00.
-				As one of its founders, I engineered all technology-related requirements, such as developing
-				their census product and their Landing Page. These projects were built using:
+				and Inclusion (DE&I). It was founded in 2020; in 2023, it had a{' '}
+				<strong>valuation of R$500,000.00</strong>.
 				<ul>
-					<li>React, Nextjs and Typescript for front-end.</li> <li>DynamoDB as a database.</li>{' '}
-					<li>AWS lambdas with a nodejs runtime for the back-end.</li>
-					<li>Terraform as a deployment tool. </li>
+					<li>
+						<strong>Engineered all technology-related requirements</strong>, such as developing
+						their census product and their Landing Page.
+					</li>
+					<li>
+						Determined business requirements and strategies by{' '}
+						<strong>directly talking to clients and customers</strong>.
+					</li>
+					<li>
+						Created a census product using <strong>React</strong>, <strong>Nextjs</strong>, and{' '}
+						<strong>Typescript</strong> for front-end; <strong>DynamoDB</strong> as a database;{' '}
+						<strong>AWS lambdas</strong> with a <strong>Nodejs</strong> runtime for the back-end;
+						and <strong>Terraform</strong> as a deployment tool.
+					</li>
+					<li>
+						<strong>Managed a team</strong> of developers and data scientists to create client
+						reports.
+					</li>
 				</ul>
-				Furthermore, as the technical lead, I was responsible for determining business requirements
-				and making strategic decisions on projects and deadlines. All while managing a team of
-				developers and data scientists. This experience was very uplifting for my career and
-				personal growth.
 			</Experience>
 			<Experience
 				title={
@@ -66,13 +76,18 @@ export function ExperiencesEnglish() {
 				}
 				duration="07/27/2022 - 12/17/2022 (4 months)"
 			>
-				Predify is one of the largest pricing companies for products and services. Its product
-				requires having a strong understanding of its customers' business model to provide the best
-				possible automated solution. Here, I gathered experience using:
+				<Italic>Predify</Italic> is one of the <strong>largest pricing companies</strong> in Brazil
+				for products and services.
 				<ul>
-					<li>Vue.js and Vuetify in the front-end.</li>
-					<li>C# and dotnet as the backend.</li>
-					<li>PostgreSQL as the database.</li>
+					<li>
+						Worked close to customers to <strong>understand their business model</strong> and
+						provide automated solutions that would maximize their revenue.
+					</li>
+					<li>
+						Used <strong>Vue.js</strong> and <strong>Vuetify</strong> in the front-end.{' '}
+						<strong>C#</strong> and <strong>dotnet</strong> as the backend.{' '}
+						<strong>PostgreSQL</strong> as the database.
+					</li>
 				</ul>
 			</Experience>
 			<Experience
@@ -82,21 +97,31 @@ export function ExperiencesEnglish() {
 					</>
 				}
 				duration="06/22/2020 - 07/27/2022 (2 years)"
-				description={
-					<>
-						Technical Lead at <Italic>Tech Viz</Italic>
-					</>
-				}
 			>
-				Pronto Combustiveis provides a platform for fuel delivery solutions. Customers can compare
-				the price of fuel and order from its platform. It also provides finance for white flag
-				stations. My job was to participate in a front-end development squad for an internal
-				application that managed fuel sales and cargo distribution. Here, I worked with:
+				<Italic>Pronto Combustiveis</Italic> provides a{' '}
+				<strong>platform for fuel delivery solutions</strong>. Customers can compare the price of
+				fuel and order from its platform. It also provides finance for white flag stations.
 				<ul>
-					<li>React and Typescript in the front-end.</li>
-					<li>GraphQL and NodeJS in the back-end.</li>
-					<li>PostgreSQL as the database.</li>
-					<li>AWS as the cloud provider.</li>
+					<li>
+						Participated in a <strong>front-end development squad</strong> for an internal
+						application that managed fuel sales and cargo distribution.
+					</li>
+					<li>
+						Worked on a company-wide internal tool that{' '}
+						<strong>
+							managed purchases, customer information, fuel delivery and truck routing
+						</strong>
+						.
+					</li>
+					<li>
+						Worked on the <strong>fuel ordering company app</strong>, with hundreds of daily users.
+					</li>
+					<li>
+						Used <strong>React</strong> and <strong>Typescript</strong> in the front-end,{' '}
+						<strong>GraphQL</strong>
+						and <strong>NodeJS</strong> in the back-end, <strong>PostgreSQL</strong> as the database
+						and <strong>AWS</strong> as the cloud provider.
+					</li>
 				</ul>
 			</Experience>
 		</Section>
