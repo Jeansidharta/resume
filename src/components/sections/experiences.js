@@ -8,22 +8,12 @@ function Experience({ title, duration, children }) {
 			<div
 				style={{
 					display: 'flex',
-					justifyContent: 'space-between',
-					alignItems: 'center',
-					columnGap: 8,
-					marginBottom: '8px',
+					flexDirection: 'column',
+					columnGap: 0,
+					marginBottom: '0.5rem',
 				}}
 			>
 				<strong style={{ textWrap: 'nowrap' }}>{title}</strong>
-				<div
-					style={{
-						height: 1,
-						width: '100%',
-						borderTopWidth: 2,
-						borderTopColor: '#dadada',
-						borderTopStyle: 'solid',
-					}}
-				/>
 				<aside style={{ textWrap: 'nowrap', margin: 0 }}>{duration}</aside>
 			</div>
 			{children}
@@ -35,7 +25,41 @@ const Italic = ({ children }) => <span className="italic">{children}</span>;
 
 export function ExperiencesEnglish() {
 	return (
-		<Section name={{ 'pt-br': 'Experiências', 'en-us': 'Experiences' }} className="experiences">
+		<Section name="Experiences" className="experiences">
+			<Experience
+				title={
+					<>
+						Full Stack Engineer at{' '}
+						<a href="https://www.walmart.com/">
+							<Italic>Walmart</Italic>
+						</a>
+					</>
+				}
+				duration="11/2023 - 12/2025"
+			>
+				<a href="https://www.walmart.com/">
+					<Italic>Walmart</Italic>
+				</a>{' '}
+				is the largest retail store in the world. Here, I work closely with US stores and eCommerce
+				business to better serve customers by empowering team members, stores, and merchants with
+				technological innovation. My key responsibilities are:
+				<ul>
+					<li>
+						Work with a <strong>squad of engineers</strong> to create and improve processes for
+						physical stores.
+					</li>
+					<li>
+						Develop <strong>Typescript/React native applications</strong> that help customers and
+						associates.
+					</li>
+					<li>
+						Deploy <strong>AWS Lambdas, S3, and ECS infrastructure</strong> for data analysis.
+					</li>
+					<li>
+						Leverage <strong>Websocket technologies</strong> for realtime application updates.
+					</li>
+				</ul>
+			</Experience>
 			<Experience
 				title={
 					<>
@@ -146,53 +170,142 @@ export function ExperiencesEnglish() {
 
 export function ExperiencesPortuguese() {
 	return (
-		<Section name={{ 'pt-br': 'Experiências', 'en-us': 'Experiences' }} className="experiences">
+		<Section name="Experiências" className="experiences">
 			<Experience
 				title={
 					<>
-						Reponsável de Tecnologia na <Italic>Tech Viz</Italic>
+						Full Stack Engineer at{' '}
+						<a href="https://www.walmart.com/">
+							<Italic>Walmart</Italic>
+						</a>
 					</>
 				}
-				duration="2020 - 2023 (3 anos)"
+				duration="11/2023 - 12/2025"
 			>
-				<Italic>Tech Viz</Italic> é uma startup de solução de dados para diagnósticos de
-				Diversidade, Equidade e Inclusão (DE&I). Participei dessa empresa desde a sua formação,
-				projetando e gerenciando todas as necessidade de tecnologia, tais como o desenvolvimento de
-				seu produto de censo e de sua <Italic>Landing Page</Italic>. Construi esses projetos usando
-				React com Nextjs em Typescript e os implantei na AWS usando Terraform. Além disso, fui
-				responsável por determinar os requisitos de negócio a partir das demandas da equipe e dar
-				suporte para quaisquer problemas ligados aos projetos.
+				<a href="https://www.walmart.com/">
+					<Italic>Walmart</Italic>
+				</a>{' '}
+				é a maior empresa de varejo no mundo. Trabalhei com lojas norte-americanas e negócios
+				eCommerce para melhorar o serviço aos clientes e auxiliar membros de equipe, lojas, e
+				comerciantes com inovações tecnologicas. Minhas responsabilidades foram:
+				<ul>
+					<li>
+						Trabalhar com equipes em lojas <strong>físicas</strong> para criar novos processos que{' '}
+						<strong>maximizem a produtividade de outros colaboradoes</strong>
+					</li>
+					<li>
+						Desenvolver <strong>aplicações nativas em Typescript/React native</strong> para auxiliar
+						clientes e colaboradores.
+					</li>
+					<li>
+						Implantar infraestrutura em <strong>AWS Lambdas, S3, e ECS</strong> para análises de
+						dados.
+					</li>
+					<li>
+						Utilizar de tecnologias baseadas em <strong>Websockets</strong> para aplicações com
+						atualizações em tempo real.
+					</li>
+				</ul>
 			</Experience>
+			{/*<Experience
+				title={
+					<>
+						Technical Lead na{' '}
+						<a href="https://www.techviz.com.br/">
+							<Italic>Tech Viz</Italic>
+						</a>
+					</>
+				}
+				duration="03/2020 - 07/2023 (3 anos)"
+			>
+				<a href="https://www.techviz.com.br/">
+					<Italic>Tech Viz</Italic>
+				</a>{' '}
+				é uma empresa de solução de dados para diagnósticos de Diversidade, Equidade e Inclusão
+				(DE&I). Foi fundada em 2020; em 2023, ela <strong>foi avaliada em R$500.000,00</strong>
+				<ul>
+					<li>
+						<strong>Construí todos os requerimentos relacionado à tecnologia</strong>, como
+						desenvolver o seu produto de censo e sua <Italic>Landing Page</Italic>.
+					</li>
+					<li>
+						Determinei as estratégias e os requerimentos de negócio me
+						<strong>comunicando diretamente com os clientes</strong>.
+					</li>
+					<li>
+						Criei um produto de censo usando <strong>React</strong>, <strong>Nextjs</strong>, e{' '}
+						<strong>Typescript</strong> no front-end; <strong>DynamoDB</strong> como banco de dados;{' '}
+						<strong>AWS lambdas</strong> e <strong>Nodejs</strong> runtime no back-end; e{' '}
+						<strong>Terraform</strong> como ferramenta de infraestrutura.
+					</li>
+					<li>
+						<strong>Gerenciei um time</strong> de três desenvolveres e cientistas de dados para
+						produzir relatórios sobre nossos clientes.
+					</li>
+				</ul>
+			</Experience>*/}
 			<Experience
 				title={
 					<>
-						Desenvolvedor front-end pleno na <Italic>Predify</Italic>
+						Desenvolvedor front-end pleno na{' '}
+						<a href="https://predify.me/">
+							<Italic>Predify</Italic>
+						</a>
 					</>
 				}
 				duration="27/07/2022 - 17/12/2022 (4 meses)"
 			>
-				A <Italic>Predify</Italic> é uma empresa de precificação de produtos e serviços. Utilizei{' '}
-				<Italic>Vue.js</Italic> e <Italic>Vuetify</Italic> para construi plataformas customizadas
-				para múltiplos clientes, entendendo seus requisitos e modelos de negócio para entregar o
-				máximo de valor.
+				<a href="https://predify.me/">
+					<Italic>Predify</Italic>
+				</a>{' '}
+				é uma das maiores empresas de precificação no Brasil para produtos e serviços.
+				<ul>
+					<li>
+						Trabalhei junto com os clientes para <strong>entender o seu modelo de negócio</strong> e
+						providenciar uma solução de automação que maximize o seu rendimento.
+					</li>
+					<li>
+						Usei <strong>Vue.js</strong> e <strong>Vuetify</strong> no front-end,{' '}
+						<strong>C#</strong> e <strong>dotnet</strong> no backend, e <strong>PostgreSQL</strong>{' '}
+						como banco de dados.
+					</li>
+				</ul>
 			</Experience>
 			<Experience
 				title={
 					<>
-						Desenvolvedor web júnior no <Italic>Pronto Combustíveis</Italic>
+						Junior web developer na{' '}
+						<a href="https://www.linkedin.com/company/pronto-combustiveis/">
+							<Italic>Pronto Combustíveis</Italic>
+						</a>
 					</>
 				}
 				duration="22/06/2020 - 27/07/2022 (2 anos)"
-				description={
-					<>
-						Technical Lead at <Italic>Tech Viz</Italic>
-					</>
-				}
 			>
-				<Italic>Pronto Combustíveis</Italic> é uma empresa de venda de combustíveis para postos de
-				bandeira branca. Minha função é participar da equipe de desenvolvimento front-end do sistema
-				web interno da empresa e do aplicativo externo para seus clientes, utilizando técnologias
-				como React, Typescript e GraphQL.
+				<a href="https://www.linkedin.com/company/pronto-combustiveis/">
+					<Italic>Pronto Combustiveis</Italic>
+				</a>{' '}
+				providencia uma <strong>plataforma para solução de venda e entrega de combustível</strong>.
+				Postos de combustível podem usar essa plataforma para comparar o preço de diferentes bases e
+				encontrar o melhor preço.
+				<ul>
+					<li>
+						Trabalhei numa ferramenta interna que maneja{' '}
+						<strong>
+							vendas, informação de clientes, distribuição de combusível e roteamento de caminhões.
+						</strong>
+						.
+					</li>
+					<li>
+						Trabalhei no aplicativo de <strong>vendas de combustível para postos</strong>, com
+						centenas de usuários diários.
+					</li>
+					<li>
+						Usei <strong>React</strong> e <strong>Typescript</strong> no front-end,{' '}
+						<strong>GraphQL</strong> e <strong>NodeJS</strong> no back-end,{' '}
+						<strong>PostgreSQL</strong> como banco de dados, e <strong>AWS</strong> como cloud.
+					</li>
+				</ul>
 			</Experience>
 		</Section>
 	);

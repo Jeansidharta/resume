@@ -1,11 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 import Header from './components/header';
 import Skills from './components/sections/skills';
 import Experiences from './components/sections/experiences';
 import PersonalInfo from './components/sections/personal-info';
-import Contributions from './components/sections/contributions.js';
 import { LocaleProvider, useLocale } from './context/locale';
 import './styles.css';
 
@@ -104,4 +103,5 @@ function App() {
 	);
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const root = createRoot(document.getElementById('root'));
+root.render(<App />);
