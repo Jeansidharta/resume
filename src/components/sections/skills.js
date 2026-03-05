@@ -44,23 +44,16 @@ function SkillsEnglish() {
 		<Section name="Skills" className="skills">
 			<ul>
 				<Category
-					name="Open Source Experience"
-					description={
-						<>
-							Contributed to multiple open-source projects, such as <strong>openscad-LSP</strong>,{' '}
-							<strong>nvim-neoclip.lua</strong>, <strong>zig-evdev</strong>,{' '}
-							<strong>home-manager</strong>, and many others more.
-						</>
-					}
+					name="Open Source Contributions"
+					description={<>zig, openscad-LSP, nvim-neoclip.lua, zig-evdev, home-manager</>}
 				/>
 				<Category
-					name="Web tools"
-					description="Typescript, React, Vite, Next.js, Vue, Vuetify, Astro, Styled-components, Material-ui,
-					Redux, Zustand, Node.js, SQL databases, GraphQL, Openapi."
+					name="Languages and tools"
+					description="Python, Golang, Terraform, AWS Cloud (Lambdas, DynamoDB, S3), Typescript, React, Vite, Next.js, Vue, Astro, Node.js, SQLite, PostgreSQL, GraphQL, Openapi, Rust, C, Zig."
 				/>
 				<Category
 					name="Other knowledges"
-					description="Linux, C, Zig, Rust, Haskell, Git, AWS Lambdas, AWS DynamoDB, Terraform, agile with scrum"
+					description="Linux, Git, agile with scrum, Microsoft office tools."
 				/>
 				<Category name="Languages" description="Portuguese (native), English (fluent)." />
 			</ul>

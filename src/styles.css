@@ -13,6 +13,11 @@ h2 {
 	font-size: 6mm;
 }
 
+h3 {
+	font-size: 5mm;
+	margin: 0 0 4px 0;
+}
+
 body {
 	min-width: 100vw;
 	min-height: 100vh;
@@ -43,10 +48,31 @@ aside {
 
 ul {
 	margin: 0;
-	padding: 8px 16px;
+	padding: 8px 16px 0 16px;
+}
+
+.experiences {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.education ul,
+.skills ul {
+	padding: 0;
 }
 li {
 	margin: 0;
+}
+
+.invisible {
+	p {
+		margin: 0;
+		padding: 0;
+	}
+	* {
+		font-size: 0.1px;
+	}
 }
 
 .italic {

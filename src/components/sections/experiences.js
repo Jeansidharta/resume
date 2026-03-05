@@ -4,7 +4,7 @@ import { useLocale } from '../../context/locale';
 
 function Experience({ title, duration, children }) {
 	return (
-		<div style={{ marginBottom: '1.5rem' }}>
+		<div>
 			<div
 				style={{
 					display: 'flex',
@@ -13,7 +13,7 @@ function Experience({ title, duration, children }) {
 					marginBottom: '0.5rem',
 				}}
 			>
-				<strong style={{ textWrap: 'nowrap' }}>{title}</strong>
+				<h3 style={{ textWrap: 'nowrap' }}>{title}</h3>
 				<aside style={{ textWrap: 'nowrap', margin: 0 }}>{duration}</aside>
 			</div>
 			{children}
@@ -35,14 +35,14 @@ export function ExperiencesEnglish() {
 						</a>
 					</>
 				}
-				duration="11/2023 - 12/2025"
+				duration="11/2023 - 12/2025 (2 years)"
 			>
 				<a href="https://www.walmart.com/">
 					<Italic>Walmart</Italic>
 				</a>{' '}
-				is the largest retail store in the world. Here, I work closely with US stores and eCommerce
-				business to better serve customers by empowering team members, stores, and merchants with
-				technological innovation. My key responsibilities are:
+				is the largest retail store in the world. Here, I worked closely with US stores and
+				eCommerce businesses to better serve customers by empowering team members, stores, and
+				merchants with technological innovation. My key responsibilities were:
 				<ul>
 					<li>
 						Work with a <strong>squad of engineers</strong> to create and improve processes for
@@ -53,14 +53,15 @@ export function ExperiencesEnglish() {
 						associates.
 					</li>
 					<li>
-						Deploy <strong>AWS Lambdas, S3, and ECS infrastructure</strong> for data analysis.
+						Deploy <strong>AWS Lambdas, S3 Buckets, and ECS infrastructure</strong> for data
+						analysis.
 					</li>
 					<li>
 						Leverage <strong>Websocket technologies</strong> for realtime application updates.
 					</li>
 				</ul>
 			</Experience>
-			<Experience
+			{/*<Experience
 				title={
 					<>
 						Technical Lead at{' '}
@@ -96,7 +97,7 @@ export function ExperiencesEnglish() {
 						reports.
 					</li>
 				</ul>
-			</Experience>
+			</Experience>*/}
 			<Experience
 				title={
 					<>
@@ -139,8 +140,8 @@ export function ExperiencesEnglish() {
 				<a href="https://www.linkedin.com/company/pronto-combustiveis/">
 					<Italic>Pronto Combustiveis</Italic>
 				</a>{' '}
-				provides a <strong>platform for fuel delivery solutions</strong>. Customers can compare the
-				price of fuel and order from its platform. It also provides finance for white flag stations.
+				provides a <strong>platform for fuel delivery solutions</strong> for white flag fuel
+				stations.
 				<ul>
 					<li>
 						Participated in a <strong>front-end development squad</strong> for an internal

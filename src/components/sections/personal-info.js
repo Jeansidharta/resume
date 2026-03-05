@@ -43,7 +43,9 @@ function SkillsPortuguese() {
 function SkillsEnglish() {
 	return (
 		<Section name=" " className="">
-			<address style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', columnGap: 32 }}>
+			<address
+				style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: 32, rowGap: 8 }}
+			>
 				<Info>
 					<Icon src="/icons/mail.svg" />
 					jeansidharta@gmail.com
@@ -54,7 +56,19 @@ function SkillsEnglish() {
 				</Info>
 				<Info>
 					<Icon src="/icons/call.svg" />
-					+1(330) 599-9526
+					+55 (19) 99376-9857
+				</Info>
+				<Info>
+					<Icon src="/icons/globe.svg" />
+					<a href="https://blog.sidharta.xyz">blog.sidharta.xyz</a>
+				</Info>
+				<Info>
+					<Icon src="/icons/linkedin.svg" />
+					<a href="https://www.linkedin.com/in/j-sidharta">linkedin.com/in/j-sidharta</a>
+				</Info>
+				<Info>
+					<Icon src="/icons/pin.svg" />
+					São Paulo, Sp — Brazil
 				</Info>
 			</address>
 		</Section>
